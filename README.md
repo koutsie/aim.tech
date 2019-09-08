@@ -1,2 +1,2 @@
-# cheat.tech
+# cheat.pub
 Yes.
