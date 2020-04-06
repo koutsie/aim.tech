@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <style>
+        nav.nav-center ul {
+        text-align: center;
+        }
+        nav.nav-center ul li {
+        display: inline;
+        float: none;
+        }
+        nav.nav-center ul li a {
+        display: inline-block;
+        }
+        @font-face {
+        font-family: "aqh";
+        src: url("aqhkicons.ttf");
+        }
+    </style>
+    <body>
+        <nav class="nav-extended nav-center blue">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">aqua!Hook</a>
+            </div>
+            <div class="center-align nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active tooltipped" data-position="bottom" data-tooltip="Legit" href="#test1"><font face="aqh" size="5" color="white">8</font></a></li>
+                    <!-- legit -->
+                    <li class="tab"><a class="tooltipped" data-position="bottom" data-tooltip="Rage" href="#test2"><font face="aqh" size="5" color="white">6</font></a></li>
+                    <!-- rage -->
+                    <li class="tab"><a class="tooltipped" data-position="bottom" data-tooltip="Visual" href="#test3"><font face="aqh" size="5" color="white">7</font></a></li>
+                    <!-- visuals -->
+                    <li class="tab"><a class="tooltipped" data-position="bottom" data-tooltip="Misc" href="#test4"><font face="aqh" size="5" color="white">1</font></a></li>
+                    <!-- misc -->
+                </ul>
+            </div>
+        </nav>
+        <div class="container center">
+        <div class="row">
+            <div class="col s6">
+                <h5>Left</h5>
+                <br>
+
+
+
+            </div>
+            <div class="col s6">
+                <h5>Right</h5>
+                <br>
+                
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+                        M.toast({html: '<p>Unfinished !</p>', classes: 'pulse'})
+                        var elems = document.querySelectorAll('select');
+                        var instances = M.FormSelect.init(elems);
+                    });
+            var slider = document.getElementById("fov");
+            var output = document.getElementById("fov-curval");
+            output.innerHTML = slider.value;
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            } 
+        </script>
+    </body>
+</html>
+<br>
+<br>
+
