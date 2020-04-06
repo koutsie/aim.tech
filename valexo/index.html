@@ -2,112 +2,107 @@
 
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-      <meta content="utf-8" http-equiv="encoding">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   </head>
-   <style>
-      nav.nav-center ul {
-      text-align: center;
-      }
-      nav.nav-center ul li {
-      display: inline;
-      float: none;
-      }
-      nav.nav-center ul li a {
-      display: inline-block;
-      }
-      @font-face {
-      font-family: "aqh";
-      src: url("aqhkicons.ttf");
-      }
-      .rcs {
-      -webkit-appearance: none;
-      width: 100%;
-      height: 15px;
-      border-radius: 5px;  
-      background: #d3d3d3;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s;
-      }
-      rcs {line-height: 0;}
-   </style>
-   <body>
-      <nav class="nav-extended nav-center navbar-fixed blue">
-         <div class="nav-wrapper">
-            <a href="#" class="brand-logo center">aqua!Hook</a></a>
-            </ul>
-         </div>
-         <div class="center nav-content">
-            <ul class="tabs tabs-transparent">
-               <li class="tab"><a class="active" href="#test1">Legit</a></li>
-               <li class="tab"><a class="" href="#test2">Rage</a></li>
-               <li class="tab"><a href="#test3">Visuals</a></li>
-               <li class="tab"><a href="#test4">Misc</a></li>
-            </ul>
-         </div>
-         <div class="progress">
-            <div class="indeterminate blue"></div>
-         </div>
-      </nav>
-      <div class="container center">
-         <div class="row">
-            <div class="col s6">
-               <h5>Weapon config</h5>
-               <br>
-               <div class="input-field col s12">
-                  <ul class="collection">
-                     <li class="collection-item"> <font face="aqh" size="5" color="black">i</font></p> Pistols</li>
-                     <li class="collection-item"> <font face="aqh" size="5" color="black">q</font></p> Machine guns</li>
-                     <li class="collection-item"> <font face="aqh" size="5" color="black">t</font></p> SMG's</li>
-                     <li class="collection-item"> <font face="aqh" size="5" color="black">e</font></p> Riffles</li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col s6">
-               <h5>Accuracy adjustment</h5>
-               <br>
-               <div class="input-field col s12">
-                  <select>
-                     <option value="" disabled selected>Selection type</option>
-                     <option value="1">Health</option>
-                     <option value="2">Fov</option>
-                  </select>
-               </div>
-               <div class="input-field">
-                  <input type="range" min="0" max="180" value="0" class="slider" id="rcs">
-                  <a>FOV: <div style="display: inline;" id="rcs-curval"></div> </a> 
-               </div>
-            </div>
-         </div>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <style>
+    nav.nav-center ul {
+    text-align: center;
+    }
+    nav.nav-center ul li {
+    display: inline;
+    float: none;
+    }
+    nav.nav-center ul li a {
+    display: inline-block;
+    }
+    @font-face {
+    font-family: "aqh";
+    src: url("aqhkicons.ttf");
+    }
+    .fovbox {
+    margin-top: 0;
+    }
+  </style>
+  <body>
+    <nav class="nav-extended nav-center navbar-fixed blue">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center-align">aqua!Hook</a></a>
+        </ul>
       </div>
+      <div class="center nav-content">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a class="active" href="#test1"><font face="aqh" size="5" color="white">8</font></a></li>
+          <!-- legit -->
+          <li class="tab"><a class="" href="#test2"><font face="aqh" size="5" color="white">6</font></a></li>
+          <!-- rage -->
+          <li class="tab"><a href="#test3"><font face="aqh" size="5" color="white">7</font></a></li>
+          <!-- visuals -->
+          <li class="tab"><a href="#test4"><font face="aqh" size="5" color="white">1</font></a></li>
+          <!-- misc -->
+        </ul>
       </div>
+      <div class="progress">
+        <div class="indeterminate blue"></div>
       </div>
+    </nav>
+    <div class="container center">
+    <div class="row">
+      <div class="col s6">
+        <h5>Weapon config</h5>
+        <br>
+        <div class="input-field col s12">
+          <ul class="collection">
+            <li class="collection-item"> <font face="aqh" size="5" color="black">i</font></p> Pistols</li>
+            <li class="collection-item"> <font face="aqh" size="5" color="black">q</font></p> Machine guns</li>
+            <li class="collection-item"> <font face="aqh" size="5" color="black">t</font></p> SMG's</li>
+            <li class="collection-item"> <font face="aqh" size="5" color="black">e</font></p> Riffles</li>
+          </ul>
+        </div>
       </div>
+      <div class="col s6">
+        <h5>Accuracy adjustment</h5>
+        <br>
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Selection type</option>
+            <option value="1">Health</option>
+            <option value="2">Fov</option>
+          </select>
+        </div>
+        <div class="fovbox">
+          <form action="#">
+            <p class="range-field">
+              <input type="range" min="0" max="180" value="0" class="slider" id="rcs" />
+            </p>
+          </form>
+          <a>
+            FOV: 
+            <div style="display: inline-block;" id="rcs-curval"></div>
+          </a>
+        </div>
       </div>
-      <script>
-         document.addEventListener('DOMContentLoaded', function() {
-                     var elems = document.querySelectorAll('select');
-                     var instances = M.FormSelect.init(elems);
-                 });
-          
-         var slider = document.getElementById("rcs");
-         var output = document.getElementById("rcs-curval");
-         output.innerHTML = slider.value; // Display the default slider value
-         
-         // Update the current slider value (each time you drag the slider handle)
-         slider.oninput = function() {
-         output.innerHTML = this.value;
-         } 
-      </script>
-   </body>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+                  M.toast({html: '<p>Unfinished</p> &nbsp;&nbsp;| &nbsp;&nbsp; <font face="aqh" size="5" color="white">8</font> '})
+                  var elems = document.querySelectorAll('select');
+                  var instances = M.FormSelect.init(elems);
+              });
+      var slider = document.getElementById("rcs");
+      var output = document.getElementById("rcs-curval");
+      output.innerHTML = slider.value;
+      slider.oninput = function() {
+      output.innerHTML = this.value;
+      } 
+    </script>
+  </body>
 </html>
 <br>
 <br>
